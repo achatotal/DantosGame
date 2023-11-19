@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8454883456084137731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../UMRPUM/dantos - zvuk/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638348011113848530
+  FileSizes:
+  - Name: Desktop
+    Value: 1248
+  Exists: 1
+--- !u!114 &-5347012495790282094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/blobdog drop
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/blobdog drop
+  Guid:
+    Data1: 1437959828
+    Data2: 1286898324
+    Data3: -837773672
+    Data4: -1749540343
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5308741879569571835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/fourleggedangel drop
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/fourleggedangel drop
+  Guid:
+    Data1: 1947946416
+    Data2: 1324530984
+    Data3: 833569699
+    Data4: 1339539349
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1616392370473735485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/lvl1
+  m_EditorClassIdentifier: 
+  Path: event:/music/lvl1
+  Guid:
+    Data1: -516223674
+    Data2: 1099701567
+    Data3: 1351649956
+    Data4: -1082724289
+  Banks:
+  - {fileID: 6927606569550340326}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4224297780649172719}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-650783333929690667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: ../UMRPUM/dantos - zvuk/Build/Desktop/sfx.bank
+  Name: sfx
+  StudioPath: bank:/sfx
+  lastModified: 638348011166726335
+  FileSizes:
+  - Name: Desktop
+    Value: 608864
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -8454883456084137731}
+  - {fileID: 3408827291397003394}
+  - {fileID: 6927606569550340326}
+  - {fileID: -650783333929690667}
+  EditorEvents:
+  - {fileID: -1616392370473735485}
+  - {fileID: 2392732808664469234}
+  - {fileID: 9013064842987135817}
+  - {fileID: 4004585650428559414}
+  - {fileID: -5347012495790282094}
+  - {fileID: -5308741879569571835}
+  - {fileID: 9091340057861982645}
+  - {fileID: 3962527405459697649}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 3408827291397003394}
+  StringsBanks:
+  - {fileID: -8454883456084137731}
+  cacheTime: 638348011166726335
+  cacheVersion: 131608
+--- !u!114 &2392732808664469234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/menu2
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/menu2
+  Guid:
+    Data1: -1075466742
+    Data2: 1208141702
+    Data3: -1465370435
+    Data4: -1078675623
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3408827291397003394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../UMRPUM/dantos - zvuk/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638348011113826774
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &3962527405459697649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/fartman drop
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/fartman drop
+  Guid:
+    Data1: 1086501308
+    Data2: 1338197424
+    Data3: 944416689
+    Data4: -646863878
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4004585650428559414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/menu1
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/menu1
+  Guid:
+    Data1: -82673052
+    Data2: 1101905630
+    Data3: -2041881205
+    Data4: -1308298758
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4224297780649172719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/lvl1/area1
+  m_EditorClassIdentifier: 
+  Name: area1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 553993613
+    data2: 1066470880
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - lvl1
+  - lvl2
+  - lvl3
+  Exists: 1
+--- !u!114 &6927606569550340326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: ../UMRPUM/dantos - zvuk/Build/Desktop/music.bank
+  Name: music
+  StudioPath: bank:/music
+  lastModified: 638348011161586117
+  FileSizes:
+  - Name: Desktop
+    Value: 8086048
+  Exists: 1
+--- !u!114 &9013064842987135817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/hostie pickup
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/hostie pickup
+  Guid:
+    Data1: -556656090
+    Data2: 1239445347
+    Data3: -1949364813
+    Data4: -766932211
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &9091340057861982645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/straznyandel smash
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/straznyandel smash
+  Guid:
+    Data1: -2107146052
+    Data2: 1263364861
+    Data3: -1750616402
+    Data4: -1034182561
+  Banks:
+  - {fileID: -650783333929690667}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
