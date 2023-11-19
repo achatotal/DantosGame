@@ -19,6 +19,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         
+        if (GlobalVariables.gameOver == true) {
+            return;
+        }
+
         if (Input.GetKey(KeyCode.A)) {
             if (transform.position.z > -MovementLimit){
                 transform.position -= new Vector3(0,0,MovementSpeed * Time.deltaTime);

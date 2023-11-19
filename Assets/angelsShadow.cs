@@ -16,6 +16,9 @@ public class angelsShadow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GlobalVariables.gameOver == true) {
+            return;
+        }
 
         if (Input.GetKey(KeyCode.LeftArrow) && AngelMovement.isLerping == false) {
             if (transform.position.z > -MovementLimitShadow){

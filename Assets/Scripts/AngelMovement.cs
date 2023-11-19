@@ -31,21 +31,20 @@ public class AngelMovement : MonoBehaviour
     void Update()
     {
 
-
-        if (Input.GetKey(KeyCode.LeftArrow) && isLerping == false) {
+        if (Input.GetKey(KeyCode.LeftArrow) && isLerping == false && GlobalVariables.gameOver == false) {
             if (transform.position.z > -MovementLimit){
                 transform.position -= new Vector3(0,0,MovementSpeed * Time.deltaTime);
             }
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) && isLerping == false) {
+        if (Input.GetKey(KeyCode.RightArrow) && isLerping == false && GlobalVariables.gameOver == false) {
             if (transform.position.z < MovementLimit){
                      transform.position += new Vector3(0,0,MovementSpeed * Time.deltaTime);
             }
         }
 
         // Attack
-        if (Input.GetKey(KeyCode.K) && isLerping == false) {
+        if (Input.GetKey(KeyCode.K) && isLerping == false && GlobalVariables.gameOver == false) {
             startPosition = transform.position;
 
             //Set the initial end position as 10 units down from the start position

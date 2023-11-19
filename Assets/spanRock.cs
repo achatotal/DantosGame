@@ -14,13 +14,16 @@ public class spanRock : MonoBehaviour
 
     private void Start()
     {
+        spawnInterval = Random.Range(1f, 2.0f);
+        spawnInterval = Mathf.Round(spawnInterval * 10.0f) * 0.1f;
+
         // Start the spawning coroutine
         StartCoroutine(SpawnObjects());
     }
 
     private IEnumerator SpawnObjects()
     {
-        while (true)
+        while (!GlobalVariables.gameOver)
         {
             Vector2 randomPoint = Random.insideUnitCircle * circleRadius;
             Vector3 spawnPosition = new Vector3(transform.position.x + randomPoint.x, transform.position.y,transform.position.z + randomPoint.y);
@@ -41,6 +44,9 @@ public class spanRock : MonoBehaviour
             int randomRotation = (Random.Range(0, 2) * 2 - 1) * 90;
 
             spawnedObject.transform.Rotate(0, randomRotation, 0);
+
+            spawnInterval = Random.Range(1f, 2.0f);
+            spawnInterval = Mathf.Round(spawnInterval * 10.0f) * 0.1f;
 
             // Wait for the specified interval (2 seconds) before spawning the next object
             yield return new WaitForSeconds(spawnInterval);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float speed = -20;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +13,11 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(speed * Time.deltaTime,0,0);
+        //GlobalVariables.speed -= Time.time/GlobalVariables.speedingOverTime;
+        transform.position -= new Vector3(GlobalVariables.speed * Time.deltaTime,0,0);
 
-        if ( GlobalVariables.gameOver == true) {
-            speed = 0;
+        if (GlobalVariables.gameOver == true) {
+            GlobalVariables.speed = 0;
         }
     }
 }

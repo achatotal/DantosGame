@@ -11,13 +11,19 @@ public class CircleObjectSpawner : MonoBehaviour
 
     private void Start()
     {
+        if (Time.time < 0.5f) {
+            SpawnObjects();
+        }
+        spawnInterval = Random.Range(1f, 3.0f);
+        spawnInterval = Mathf.Round(spawnInterval * 10.0f) * 0.1f;
+
         // Start the spawning coroutine
         StartCoroutine(SpawnObjects());
     }
 
     private IEnumerator SpawnObjects()
     {
-        while (true)
+        while (!GlobalVariables.gameOver)
         {
             Vector2 randomPoint = Random.insideUnitCircle * circleRadius;
             Vector3 spawnPosition = new Vector3(transform.position.x + randomPoint.x, transform.position.y, transform.position.z + randomPoint.y);
@@ -31,6 +37,8 @@ public class CircleObjectSpawner : MonoBehaviour
             spawnedObject.AddComponent<DestroyNotUsedObject>();
             spawnedObject.AddComponent<MoveForward>();
 
+            spawnInterval = Random.Range(1.0f, 3.0f);
+            spawnInterval = Mathf.Round(spawnInterval * 10.0f) * 0.1f;
             // Wait for the specified interval (2 seconds) before spawning the next object
             yield return new WaitForSeconds(spawnInterval);
         }
