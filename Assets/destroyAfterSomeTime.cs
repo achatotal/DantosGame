@@ -10,7 +10,6 @@ public class destroyAfterSomeTime : MonoBehaviour
     {
 
 
-        Debug.Log(Mathf.RoundToInt((float)transform.position.z) != Mathf.RoundToInt((float)-14.5741));
         // Call the DestroyObject function after the specified delay7
         if(Mathf.RoundToInt((float)transform.position.z) != Mathf.RoundToInt((float)-14.5741)) {
             Invoke("DestroyObject", destroyDelay);

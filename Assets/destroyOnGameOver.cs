@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class destroyOnGameOver : MonoBehaviour
 {
+    public static float timeFromStart;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +18,8 @@ public class destroyOnGameOver : MonoBehaviour
         if(GlobalVariables.gameOver) {
             Destroy(gameObject);
         }
+
+        timeFromStart = Time.time;
+    
     }
 }

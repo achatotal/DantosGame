@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class spanRock : MonoBehaviour
 {
+    private string lastRockName;
+
     private SpriteRenderer spriteRenderer;
 
     public GameObject[] gameObjects;
@@ -30,6 +32,13 @@ public class spanRock : MonoBehaviour
 
             // Instantiate the object at the random position
             GameObject objectToSpawn = gameObjects[Random.Range(0, gameObjects.Length)];
+            
+            // Choose different rock than last time
+            while(lastRockName == objectToSpawn.name) {
+                objectToSpawn = gameObjects[Random.Range(0, gameObjects.Length)];
+            }
+
+            lastRockName = objectToSpawn.name;
           
             // choose random color and change color of sprite 
             Color randomColor = availableColors[Random.Range(0, availableColors.Count)];

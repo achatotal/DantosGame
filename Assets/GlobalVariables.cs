@@ -9,4 +9,5 @@ public class GlobalVariables : MonoBehaviour
     public static float speed = -20;
 
     public static float speedingOverTime = 0;
+
 }

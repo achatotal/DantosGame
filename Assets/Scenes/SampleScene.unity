@@ -295,7 +295,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124781108
 GameObject:
@@ -818,7 +818,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -81.557, y: -94.314, z: 12.182}
 --- !u!1 &383427521
 GameObject:
@@ -1432,6 +1432,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 759726967}
   circleRadius: 2
   spawnInterval: 2
+  spanAfterSomeTime: 10
 --- !u!1 &609644605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,10 +1584,10 @@ MonoBehaviour:
   - {fileID: 383427521}
   - {fileID: 814852842}
   availableColors:
-  - {r: 0.8980392, g: 0.39322954, b: 0.30588233, a: 1}
-  - {r: 1, g: 0.3449567, b: 0.10062885, a: 1}
-  - {r: 0.9339623, g: 0.27030036, b: 0.12922738, a: 1}
-  - {r: 0.9433962, g: 0.53777003, b: 0.18393251, a: 0}
+  - {r: 0.59607846, g: 0.36078432, b: 0.83137256, a: 1}
+  - {r: 0.7767295, g: 0.55345905, b: 1, a: 1}
+  - {r: 0.6897787, g: 0.22926304, b: 0.7924528, a: 1}
+  - {r: 0.49173918, g: 0.16850594, b: 0.754717, a: 1}
   circleRadius: 2
   spawnInterval: 2
 --- !u!1 &725604843
@@ -1908,7 +1909,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f3ee7063db16473429d0b0418640aa76, type: 3}
-  m_Color: {r: 0.8326766, g: 0.9339623, b: 0.44642216, a: 1}
+  m_Color: {r: 0.46226418, g: 0.14001739, b: 0.07704399, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2367,7 +2368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1501833688}
   circleRadius: 5
-  spawnInterval: 2
+  spawnInterval: 10
+  spanAfterSomeTime: 20
 --- !u!1 &885098482
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,10 +3255,10 @@ MonoBehaviour:
   - {fileID: 383427521}
   - {fileID: 814852842}
   availableColors:
-  - {r: 0.9339623, g: 0.2787327, b: 0.20852609, a: 1}
-  - {r: 0.9622642, g: 0.3782484, b: 0.6469107, a: 1}
-  - {r: 0.90588236, g: 0.599599, b: 0.43137258, a: 1}
-  - {r: 0.8, g: 0.4276127, b: 0.22352938, a: 1}
+  - {r: 0.5577574, g: 0.37278977, b: 0.9716981, a: 1}
+  - {r: 0.54730433, g: 0.058146335, b: 0.9245283, a: 1}
+  - {r: 0.6345905, g: 0.36078432, b: 0.83137256, a: 1}
+  - {r: 0.81502575, g: 0.3904117, b: 0.8867924, a: 1}
   circleRadius: 2
   spawnInterval: 2
 --- !u!1 &1635877628
@@ -3377,7 +3379,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0613c7a35b1b8f74eb2f81e50a59779d, type: 3}
-  m_Color: {r: 0.8352941, g: 0.9372549, b: 0.44705883, a: 1}
+  m_Color: {r: 0.4627451, g: 0.14117648, b: 0.078431375, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3744,6 +3746,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 820872672}
   circleRadius: 2
   spawnInterval: 2
+  spanAfterSomeTime: 2
 --- !u!1 &1995705658
 GameObject:
   m_ObjectHideFlags: 0
