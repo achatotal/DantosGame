@@ -647,6 +647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba6c53acfb0cf843b3aa306d1909910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angelCrashSound:
+    Guid:
+      Data1: -2107146052
+      Data2: 1263364861
+      Data3: -1750616402
+      Data4: -1034182561
+    Path: event:/sfx/straznyandel smash
   animator: {fileID: 314390698}
   lerpSpeed: 10
   lerpDistance: 2.2

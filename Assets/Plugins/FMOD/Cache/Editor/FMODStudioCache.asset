@@ -188,7 +188,7 @@ MonoBehaviour:
   - {fileID: -1249473255782567945}
   StringsBanks:
   - {fileID: 163414345324645222}
-  cacheTime: 638360769449817050
+  cacheTime: 638360852186040183
   cacheVersion: 131608
 --- !u!114 &163414345324645222
 MonoBehaviour:
@@ -353,7 +353,7 @@ MonoBehaviour:
   Path: ../../dantos - zvuk/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638360769449817050
+  lastModified: 638360852186040183
   FileSizes:
   - Name: Desktop
     Value: 625248

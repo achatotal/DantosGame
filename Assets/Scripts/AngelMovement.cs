@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class AngelMovement : MonoBehaviour
 {
+    [SerializeField] private EventReference angelCrashSound;
     public Animator animator;
 
     public static float MovementSpeed = 2f;
@@ -51,6 +53,7 @@ public class AngelMovement : MonoBehaviour
             endPosition = startPosition - new Vector3(0.0f, lerpDistance, 0.0f);
 
             animator.SetTrigger("Attack");
+            AudioManager.instance.PlayOneShot(angelCrashSound, this.transform.position);
 
             isLerping = !isLerping; // Toggle the lerp on the 'K' key press
             isLerpingForward = true; // Reset the lerp direction to forward
