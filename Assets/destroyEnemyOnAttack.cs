@@ -27,7 +27,6 @@ public class destroyEnemyOnAttack : MonoBehaviour
 
     void Update() {
         if (GlobalVariables.gameOver == true) {
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.hostieCollectedSound, this.transform.position);
 
             // span animation
             Vector3 spawnPosition = new Vector3(transform.position.x + PlusX, transform.position.y + PlusY,transform.position.z + PlusZ);
