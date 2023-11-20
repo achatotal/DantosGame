@@ -1323,10 +1323,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.43
+  m_Radius: 0.83
   m_Height: 5.9999995
   m_Direction: 1
-  m_Center: {x: 0.9, y: -0.0000006556511, z: -0.000011444092}
+  m_Center: {x: 0.55, y: -0.0000006556511, z: -0.000011444092}
 --- !u!1 &590138221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,7 +2118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -95283843, guid: 5c5e1e480a0ccd9418e750b05cae29e1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2178,10 +2178,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.43
+  m_Radius: 1.07
   m_Height: 5.9999995
   m_Direction: 1
-  m_Center: {x: -0.09, y: 0.4, z: -0.000011444092}
+  m_Center: {x: 0.12, y: 0.4, z: -0.000011444092}
 --- !u!1 &844313006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,7 +2456,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.38
+  m_Radius: 2.73
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &885098487
 Animator:
@@ -2521,7 +2521,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f0d176b669c3444438dc58be529e45a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3607,11 +3607,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1847658718}
   - component: {fileID: 1847658717}
-  - component: {fileID: 1847658715}
   - component: {fileID: 1847658719}
   - component: {fileID: 1847658720}
   - component: {fileID: 1847658721}
   - component: {fileID: 1847658722}
+  - component: {fileID: 1847658723}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3619,27 +3619,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1847658715
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847658714}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0.04, y: 0.24, z: 0}
 --- !u!33 &1847658717
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3731,6 +3710,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &1847658723
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847658714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.45
+  m_Height: 2.21
+  m_Direction: 1
+  m_Center: {x: -1.52, y: 0.49, z: 0.09}
 --- !u!1 &1963207833
 GameObject:
   m_ObjectHideFlags: 0
