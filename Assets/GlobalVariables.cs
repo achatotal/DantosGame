@@ -10,4 +10,5 @@ public class GlobalVariables : MonoBehaviour
 
     public static float speedingOverTime = 0;
 
+    public static float score;
 }
