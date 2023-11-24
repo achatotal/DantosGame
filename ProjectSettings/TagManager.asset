@@ -8,6 +8,7 @@ TagManager:
   - Angel
   - Enemy
   - Pig
+  - Button
   layers:
   - Default
   - TransparentFX

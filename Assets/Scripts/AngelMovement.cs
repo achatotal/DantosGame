@@ -46,7 +46,7 @@ public class AngelMovement : MonoBehaviour
         }
 
         // Attack
-        if (Input.GetKey(KeyCode.K) && isLerping == false && GlobalVariables.gameOver == false) {
+        if (Input.GetKey(KeyCode.K) && isLerping == false && GlobalVariables.gameOver == false && GlobalVariables.feather >= 0) {
             startPosition = transform.position;
 
             //Set the initial end position as 10 units down from the start position
@@ -58,6 +58,7 @@ public class AngelMovement : MonoBehaviour
             isLerping = !isLerping; // Toggle the lerp on the 'K' key press
             isLerpingForward = true; // Reset the lerp direction to forward
 
+            GlobalVariables.feather -= 0;
         }
 
         if (isLerping)

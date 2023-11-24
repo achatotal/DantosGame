@@ -14,9 +14,10 @@ public class DestroyOnHit : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")){
+
+            GlobalVariables.feather += 1;
            
-           GlobalVariables.score = Mathf.Round(Time.time);
-           Debug.Log(GlobalVariables.score);
+            GlobalVariables.score = Mathf.Round(Time.time);
             AudioManager.instance.PlayOneShot(FMODEvents.instance.hostieCollectedSound, this.transform.position);
 
             // span animation
