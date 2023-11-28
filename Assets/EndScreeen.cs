@@ -25,6 +25,14 @@ public class EndScreeen : MonoBehaviour
             pointsText.text = ScoreInt + "m";
             callOnes = true;
         }
+
+        if (GlobalVariables.gameOver == false) {
+            return;
+        }
+
+if (Input.GetKeyDown("k") || Input.GetKeyDown("e") || Input.GetKeyDown("f") || Input.GetKeyDown("g") || Input.GetKeyDown("r") || Input.GetKeyDown("l")) {
+                    SceneManager.LoadScene("Menu_UI");
+    }
     }
     public void RestartButton() 
     {
