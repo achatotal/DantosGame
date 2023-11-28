@@ -7,14 +7,20 @@ public class spanEnemyFormation : MonoBehaviour
 public GameObject objectToSpawn;
     private float circleRadius = 0f;
 
+    public float pause = 0f;
+
+    public int afterHowManyEnemyesPause = 0;
     public float spawnInterval = 2.5f;
     public float spanAfterSomeTime;
 
     private bool start = true;
+    private int countSpanedEmenyes = 0;
+    private float spanIntervalStatic;
 
     private void Start()
     {
         
+       spanIntervalStatic = spawnInterval;
        spawnInterval = spanAfterSomeTime;
 
         // Start the spawning coroutine
@@ -37,6 +43,13 @@ public GameObject objectToSpawn;
                 spawnedObject.transform.Rotate(0, randomRotation, 0);
                 spawnedObject.AddComponent<DestroyNotUsedObject>();
                 spawnedObject.AddComponent<MoveForward>();
+
+                if (afterHowManyEnemyesPause == countSpanedEmenyes) {
+                    spawnInterval = spanIntervalStatic;
+                    countSpanedEmenyes = 0;
+                } else {
+                    spawnInterval = pause;
+                }
 
       
             } else {
