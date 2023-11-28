@@ -10,7 +10,7 @@ public GameObject objectToSpawn;
     public float pause = 0f;
 
     public int afterHowManyEnemyesPause = 0;
-    public float spawnInterval = 2.5f;
+    public float spawnInterval;
     public float spanAfterSomeTime;
 
     private bool start = true;
@@ -44,11 +44,14 @@ public GameObject objectToSpawn;
                 spawnedObject.AddComponent<DestroyNotUsedObject>();
                 spawnedObject.AddComponent<MoveForward>();
 
-                if (afterHowManyEnemyesPause == countSpanedEmenyes) {
-                    spawnInterval = spanIntervalStatic;
+                if (afterHowManyEnemyesPause == countSpanedEmenyes+1) {
+                    spawnInterval = pause;
+
                     countSpanedEmenyes = 0;
                 } else {
-                    spawnInterval = pause;
+                    spawnInterval = spanIntervalStatic;
+
+                    countSpanedEmenyes += 1;
                 }
 
       
