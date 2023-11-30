@@ -19,8 +19,7 @@ public class EndScreeen : MonoBehaviour
     
     public void Update()
     {   
-        GlobalVariables.score = Mathf.Round(Time.time);
-        ScoreInt = GlobalVariables.score;
+        ScoreInt = Mathf.Round(GlobalVariables.score);
         if(GlobalVariables.gameOver && !callOnes)
         {
             endScreneObj.SetActive(true);

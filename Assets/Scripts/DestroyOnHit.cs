@@ -17,7 +17,6 @@ public class DestroyOnHit : MonoBehaviour
 
             GlobalVariables.feather += 1;
            
-            GlobalVariables.score = Mathf.Round(Time.time);
             AudioManager.instance.PlayOneShot(FMODEvents.instance.hostieCollectedSound, this.transform.position);
 
             // span animation
